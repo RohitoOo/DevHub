@@ -57,6 +57,12 @@ if(!this.state.autoClickedDecrement) {
 }
 
 
+selfDestruct = () => {
+
+this.props.ShowCounter();
+console.log('showCounter called')
+
+}
 
 
 render(){
@@ -67,6 +73,7 @@ render(){
       <button onClick={this.decrementFunction} >Decrement</button>
       <button onClick={this.autoIncrement}> Auto Increment </button>
       <button onClick={this.autoDecrement}> Auto Decrement </button>
+      <button onClick={this.selfDestruct}> Self Destruction </button>
 
 
     </div>

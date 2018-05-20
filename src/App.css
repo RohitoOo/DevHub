@@ -14,6 +14,19 @@ list-style-type: none;
 
 .App {
   text-align: center;
+
+}
+
+
+.AppContainer{
+
+  width: 500px;
+  border: 1px solid;
+  margin: 150px;
+    text-align: center;
+
+
+
 }
 
 .App-logo {

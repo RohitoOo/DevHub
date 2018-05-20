@@ -32,8 +32,20 @@ class App extends Component {
       constructor(props) {
           super(props);
           this.state = {
-            showCounter : true
+          showCounter : true,
+
           }};
+
+
+
+ShowCounterDisplay = () => {
+     console.log('ShowCounter');
+     this.setState(currentState => {
+         return {showCounter: false}
+     })
+ };
+
+
 
 
   render() {
@@ -47,13 +59,14 @@ class App extends Component {
           Journey of React begins....
         </p>
         <div>
-        <Counter />
+           { this.state.showCounter && <Counter ShowCounter={this.ShowCounterDisplay} />}
 
 
         </div>
         <div>
 
             <Me data={this.props.data} />
+
 
         </div>
 
